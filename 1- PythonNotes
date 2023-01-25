@@ -1,0 +1,97 @@
+#What is Python
+#   Python is a popular language used to solve complex problems in less time with
+#   fewer lines of code. The syntax is easier than most other languages.
+
+# Variables
+#   Used to store data in computers memory. Can be used later in the program to access
+#   the stored data. Primitive types can be stored in the memory such as integers,
+#   float or floating point number, boolean, or string. Variable names should be short
+#   and meaningful.
+course = "Python Notes"
+print(course)
+
+# Boolean
+#   A value that is either True or False.
+Python_is_fun = True
+
+# String
+#   This is text in a program that needs to be surrounded by quotes. The quotes can be
+#   single or doubel quotes. Triple quotes are used for multi-line strings. Strings
+# are zero index which means the first character in a string is in place 0.
+string1 = "This is a string"
+string2 = 'So is this'
+string3 = """
+This is a multi line string.
+Like if you're writing a paragraph.
+"""
+# Int
+#   This is a whole number.
+int()
+
+# Float (floating point number)
+#   This is a number with a decimal point.
+float()
+
+# Function
+#   A reusable piece of code that carries out a task. Think of a TV remote and it's
+#   buttons are the function. A function has a () after the name. The argument is then
+#   passed in the parenthesis. For example len function will tell the length of a string.
+#   this will display how many charcaters are in the string 'course'
+print(len(course))
+
+#   you can use different methods to find a character in a certain spot in the string.
+print(course[0])
+#   this will display 'P' since its the first character in index 0.
+
+#   you can also splice strings
+print(course[0:3])
+#   this retrun a new string with just the first three characters of the
+#   course variable. Other variations can include
+print(course[:3])
+print(course[0:])
+
+# Escape Sequences
+#   This is used when you need to put a quote in a quote.For example the following code
+#   is not going to work. course1 = "Python " Programming".
+#   To get around that we can use a backslash. The backslash is called an escape
+#   character and is used to escape the character immediatly after it. such as:
+course1 = "The day is \"very\" long"
+print(course1)
+#   there are multiply escape sequences such as: \" fore double quotes , \' for single
+#   quote, \\ if I want the string to include a \, and \n to created a new line mid sting.
+course2 = "Let's make this \ntwo lines"
+print(course2)
+
+# Formatted Strings
+#   This is an example of concatentaion:
+first = "John"
+last = "Allen"
+full1 = first + " " + last
+#   the full1 variable is ugly, dirty code.
+print(full1)
+#   A better way to do it is using a formatted string
+full2 = f"{first} {last}"
+print(full2)
+#   you can also add functions in a formatted string
+full3 = f"{len(first)} {last} {2 + 2}"
+print(full3)
+
+# String methods
+#   when you have an object you can use dot notation to access its functions.
+course3 = "This IS tHe stRINg in queSTion"
+print(course3)
+#   creates the whole string to upper case:
+print(course3.upper())
+#   creates the whole string in lower case:
+print(course3.lower())
+#   this will make the first letter of every word a capital:
+print(course3.title())
+# Another function is strip. this will strip off any white spaces from a string. This
+# is particually user when asking for user input and the my have a trailing on leading space.
+course4 = "  theres a few spaces in the front and end!   "
+print(course4)
+print(course4.strip())
+# you can also find the index of a string. For example.
+love = "Love"
+print(love)
+print(love.find("ve"))
